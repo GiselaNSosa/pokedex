@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeApi</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Pokémon <img class="logo" /></h1>
+<div> 
+    <h3> Busca tu pokémon</h3>
+    <input type="number" id="pokemon"> <button id="boton">Buscar</button>       
+</div>
+
+  <main>
+    <div class="info-card" id="cardPokemon" hidden>
+        <br>
+        <img width="200" height="250" id="fotoPokemon" /> <br>
+        <h2 id="nombrePokemon"></h2> 
+    <div class="div-interno">
+        <h2> Tipos: </h2>
+        <p id="tipos"></p>   
+        <p id="altura"></p>
+        <p id="peso"></p>
+    </div>
+      </div>
+      <div class="info-card-error" id="cardError" hidden>
+          <h3>Error:</h3>
+          <p id="mensajeError"></p>
+      </div>
+  </main>
+<script src="./index.js"></script>
+</body>
+</html>
